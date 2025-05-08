@@ -8,18 +8,16 @@ else if randomChoice = 1 then computerChoice is scissor
 else if randomCHoice = 2 then computerChoice is paper
 
 return string variable
-
-use console.log to print out what the string is 
 */
 
 function getComputerChoice() {
-    randomChoice = Math.floor(Math.random() * 3)
-    computerChoice = ""
+    let randomChoice = Math.floor(Math.random() * 3)
+    let computerChoice = ""
     if (randomChoice == 0) {
         computerChoice = "Rock"
     }
     else if (randomChoice == 1) {
-        computerChoice = "Scissor"
+        computerChoice = "Scissors"
     }
     else if (randomChoice == 2) {
         computerChoice = "Paper"
@@ -28,15 +26,16 @@ function getComputerChoice() {
     return computerChoice 
     }
 
-console.log(getComputerChoice())
-
 /*
 getHumanChoice function:
 initialize a variable userChoice and use prompt function to get the user's choice
 return variable userChoice with the user's choice of rock paper of scissors
-
-use console.log to print out what the user's choice is
 */
+
+function getHumanChoice() {
+    let userChoice = prompt("What do you want to play?")
+    return userChoice
+}
 
 /*
 initialize variable humanScore and set it equal to 0
